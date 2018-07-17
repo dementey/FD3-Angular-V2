@@ -1,2 +1,2 @@
-rar a -s -r -m5 -x.git -x.git/*.* Angular_full
+rar a -s -r -m5 -sfx -x.git -x.git/*.* FD3-Angular-V2
 pause

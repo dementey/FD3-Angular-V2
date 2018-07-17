@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name:"stars",
   pure:true,
 })
-export class StarsPipe {
+export class StarsPipe implements PipeTransform {
 
   transform(cnt:number):string {
     let s:string="";
