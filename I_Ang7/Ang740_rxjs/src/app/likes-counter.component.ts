@@ -14,7 +14,9 @@ export class LikesCounterComponent {
 
   constructor(events:LikeEventsService) {
     events.getSubject()
-      .subscribe(this.nextLike.bind(this));
+      .subscribe( this.nextLike.bind(this) )
+      //.subscribe( (like:number)=>{ this.nextLike(like); } )
+      ;
   }
 
   nextLike(like:number):void {
