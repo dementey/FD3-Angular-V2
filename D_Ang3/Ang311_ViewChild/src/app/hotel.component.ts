@@ -20,7 +20,7 @@ export class HotelComponent {
 
   @ViewChild("comment") commentRef; // получаем ссылку на элемент comment темплейта
 
-  private currentComment:string="комментарий";
+  public currentComment:string="комментарий";
 
   getName():string {
     return this.hotelName;
