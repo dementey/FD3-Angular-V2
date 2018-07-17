@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { LoggerService } from './logger.service';
 
@@ -8,7 +8,7 @@ import { LoggerService } from './logger.service';
   templateUrl: 'hotel.component.html',
   styleUrls: ['hotel.component.css']
 })
-export class HotelComponent {
+export class HotelComponent implements OnInit {
 
   public hotelName:string='California';
 

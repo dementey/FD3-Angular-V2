@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: 'hotel.component.html',
   styleUrls: ['hotel.component.css']
 })
-export class HotelComponent {
+export class HotelComponent implements OnInit {
 
   public hotelName:string='California';
 

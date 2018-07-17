@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { LoggerService } from './logger.service';
 
@@ -8,7 +8,7 @@ import { LoggerService } from './logger.service';
   templateUrl: 'hotel-title.component.html',
   styleUrls: ['hotel-title.component.css']
 })
-export class HotelTitleComponent {
+export class HotelTitleComponent implements OnInit {
 
   @Input("hotel-name")
   private hotelName:string;

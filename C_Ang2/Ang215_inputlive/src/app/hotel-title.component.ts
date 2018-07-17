@@ -1,4 +1,4 @@
-import { Component, Input, SimpleChange } from '@angular/core';
+import { Component, Input, SimpleChange, OnChanges } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -6,7 +6,7 @@ import { Component, Input, SimpleChange } from '@angular/core';
   templateUrl: 'hotel-title.component.html',
   styleUrls: ['hotel-title.component.css']
 })
-export class HotelTitleComponent {
+export class HotelTitleComponent implements OnChanges {
 
   @Input("hotel-name")
   private hotelName:string;

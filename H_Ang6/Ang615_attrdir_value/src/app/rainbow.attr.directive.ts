@@ -1,9 +1,9 @@
-﻿import { Directive, ElementRef, Input } from "@angular/core"; 
+﻿import { Directive, ElementRef, Input, AfterViewInit } from "@angular/core"; 
 
 @Directive({ 
   selector: "[rainbow]", 
 }) 
-export class RainbowDirective { 
+export class RainbowDirective implements AfterViewInit { 
 
   colors:Array<string>
     =['red','green','blue','cyan','magenta','yellow'];
