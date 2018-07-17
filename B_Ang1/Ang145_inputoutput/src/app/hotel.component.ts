@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HotelComponent {
 
+  constructor() {
+    setTimeout( ()=>{this.hotelName="TITANIC";} ,10000);
+  }
+
   public hotelName:string = 'California';
 
   private rooms:Array<{num:number,beds:number}>=[
