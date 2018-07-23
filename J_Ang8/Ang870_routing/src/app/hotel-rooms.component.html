@@ -3,6 +3,4 @@
   <hotel-room *ngFor="let room of getRooms()" [num]="room.num" [beds]="room.beds" roomlink></hotel-room>
 </div>
 <br>
-<div>
-  <a routerLink="/">на главную</a>
-</div>
+<hotel-links></hotel-links>

@@ -9,6 +9,7 @@ import { HotelPhotoComponent } from './hotel-photo.component';
 import { HotelRoomComponent } from './hotel-room.component';
 import { HotelRoomsComponent } from './hotel-rooms.component';
 import { HotelRoomInfoComponent } from './hotel-roominfo.component';
+import { HotelLinksComponent } from './hotel-links.component';
 import { HotelDatasource } from './hotel.datasource';
 
 // определяем маршруты
@@ -27,6 +28,7 @@ const appRoutes: Routes =[
     HotelComponent, HotelTitleComponent, 
     HotelPhotoComponent, HotelRoomInfoComponent,
     HotelRoomsComponent, HotelRoomComponent,
+    HotelLinksComponent,
   ],
   providers: [ HotelDatasource ],
   bootstrap: [ HotelComponent ]
